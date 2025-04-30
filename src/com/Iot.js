@@ -224,23 +224,23 @@ export const Iot = () => {
                 <table className='Mtable'>
                     <thead>
                         <tr>
-                            <th>Timestamp</th>
+                            {/* <th>Timestamp</th> */}
                             <th>Bottle Count</th>
-                            <th>Counter Reset</th>
+                            {/* <th>Counter Reset</th> */}
                             <th>PLC Status</th>
-                            <th>Pulse</th>
-                            <th>Stop PLC</th>
+                            {/* <th>Pulse</th>
+                            <th>Stop PLC</th> */}
                         </tr>
                     </thead>
                     <tbody>
-                        {[...records].reverse().map((record, index) => (
+                        {[...records].reverse().slice(0,1).map((record, index) => (
                             <tr key={index}>
-                                {new Date(record.ts).toLocaleString()}
+                                {/* {new Date(record.ts).toLocaleString()} */}
                                 <td>{record.bottle_count}</td>
-                                <td>{record.counter_reset === 1 ? "Yes" : "No"}</td>
+                                {/* <td>{record.counter_reset === 1 ? "Yes" : "No"}</td> */}
                                 <td>{record.plc_status === 1 ? "Yes" : "No"}</td>
-                                <td>{record.pulse === 1 ? "Yes" : "No"}</td>
-                                <td>{record.stop_plc === 1 ? "Yes" : "No"}</td>
+                                {/* <td>{record.pulse === 1 ? "Yes" : "No"}</td>
+                                <td>{record.stop_plc === 1 ? "Yes" : "No"}</td> */}
                             </tr>
                         ))}
                     </tbody>
