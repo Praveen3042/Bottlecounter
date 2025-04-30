@@ -238,7 +238,7 @@ export const Iot = () => {
                                 {/* {new Date(record.ts).toLocaleString()} */}
                                 <td>{record.bottle_count}</td>
                                 {/* <td>{record.counter_reset === 1 ? "Yes" : "No"}</td> */}
-                                <td>{record.plc_status === 1 ? "ON" : "OFF"}</td>
+                                <td>{record.plc_status === 1 ? "OFF" : "ON"}</td>
                                 {/* <td>{record.pulse === 1 ? "Yes" : "No"}</td>
                                 <td>{record.stop_plc === 1 ? "Yes" : "No"}</td> */}
                             </tr>
